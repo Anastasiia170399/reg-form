@@ -1,0 +1,213 @@
+.form {
+  position: relative;
+  width: 100%;
+
+  &__input-group {
+    //position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.68vw;
+
+    @media (min-width: 1000px) {
+      gap: 0.625vw;
+    }
+  }
+
+  &__error {
+    position: relative;
+    width: 100%;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    transform: scale(0);
+
+    &-icon {
+      flex-shrink: 0;
+      display: block;
+      width: 5vw;
+      height: 5vw;
+
+      background: url("./images/error-icon.svg") center center no-repeat;
+      background-size: contain;
+
+      margin-right: 2vw;
+    }
+
+    &-text {
+      font-family: "SFProDisplay", Arial, Helvetica, sans-serif;
+      font-size: 3vw;
+      font-weight: 400;
+      text-align: left;
+
+      color: #ff6964;
+    }
+
+    &_show {
+      //margin-top: -5vw;
+
+      transform: scale(1);
+
+      transition: all 0.25s ease-out;
+    }
+
+    @media (min-width: 1000px) {
+      justify-content: center;
+
+      &-icon {
+        width: 1.25vw;
+        height: 1.25vw;
+        margin-top: -0.2vw;
+
+        margin-right: 0.52vw;
+      }
+
+      &-text {
+        font-size: 0.83vw;
+      }
+
+      &_show {
+
+      }
+    }
+  }
+
+  &__agreement {
+    &-label {
+      font-family: "SFProDisplay", Arial, Helvetica, sans-serif;
+      font-weight: 400;
+
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      text-align: start;
+      cursor: pointer;
+    }
+
+    &-text {
+      font-family: "Sf-Pro-Display", sans-serif;
+
+      box-sizing: border-box;
+      font-size: 2.6vw;
+      line-height: 130%;
+      text-transform: none;
+      color: #F8FF13;
+      letter-spacing: -0.144983px;
+      padding-right: 3.6vw;
+
+      @media (min-width: 1000px) {
+        font-size: 0.62vw;
+        padding-right: 0.4vw;
+        letter-spacing: -0.010vw;
+      }
+    }
+
+    &-container {
+      width: 24px;
+      height: 24px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      grid-area: right;
+    }
+
+    &-input {
+      width: 4.059vw;
+      height: 4.059vw;
+      margin: 0;
+      border-radius: 0.67vw;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      cursor: pointer;
+      transition: background-color 150ms ease-in-out;
+      will-change: background-color;
+      background: #29262180;
+
+      @media (min-width: 1000px) {
+        width: 1.363vw;
+        height: 1.363vw;
+        border-radius: .21vw;
+      }
+
+      &:checked {
+        background: #009E69 url("./images/checked.svg") no-repeat center center;
+        border: none;
+        background-size: 100%;
+      }
+    }
+
+    &-link {
+      text-decoration: none;
+      color: #fff;
+
+      &:focus,
+      &:hover {
+        text-decoration: underline;
+      }
+
+      @media (min-width: 1000px) {
+        color: #FAF9F8;
+      }
+    }
+  }
+}
+
+.checkbox {
+  background: rgba(23, 23, 22, 0.7);
+  border-radius: 1.784vw;
+  padding: 2.349vw 2.373vw;
+  margin: 1.467vw 0 2.667vw;
+
+  @media (min-width: 1000px) {
+    padding: 0.495vw 0.908vw;
+    border-radius: 0.625vw;
+    margin: 0.579vw 0 0.632vw;
+  }
+
+  &--outline {
+    outline: 1px solid #ff3333;
+    border-radius: 1.784vw;
+
+    @media (min-width: 1000px) {
+      border-radius: 0.625vw;
+    }
+  }
+}
+
+.button {
+  margin-top: 5px;
+
+  @media (min-width: 1000px) {
+    margin-top: 14px;
+  }
+}
+
+.control {
+  position: relative;
+  margin-left: 4px;
+  max-width: 100%;
+}
+
+@keyframes changingTermsLink {
+  50% {
+    color: #f8ff13;
+    opacity: 1;
+  }
+  100% {
+    color: #ffffff;
+    opacity: 0.8;
+  }
+}
+
+@keyframes changingTermsLink2 {
+  50% {
+    color: #f8ff13;
+    opacity: 1;
+  }
+  100% {
+    color: #FFFFFF;
+    opacity: 0.8;
+  }
+}

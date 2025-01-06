@@ -1,0 +1,9 @@
+export const keys = {
+  API_URL: process.env.NEXT_PUBLIC_API_URL,
+  LANGUAGE: process.env.NEXT_PUBLIC_LANGUAGE,
+  CURRENCY_ID: process.env.NEXT_PUBLIC_CURRENCY_ID,
+  NN_BONUS: process.env.NEXT_PUBLIC_NN_BONUS,
+  BRAND: process.env.NEXT_PUBLIC_BRAND,
+  BONUS_PRODUCT_TYPE: process.env.NEXT_PUBLIC_LP_TYPE,
+  REQUEST: process.env.NEXT_PUBLIC_REQUEST,
+};

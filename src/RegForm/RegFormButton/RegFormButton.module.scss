@@ -1,0 +1,63 @@
+.button-wrapper{
+display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+.button {
+  position: relative;
+  display: grid;
+  place-content: center;
+  height: 14.933vw;
+  width: 59.733vw;
+  justify-content: center;
+  font-family: "Poppins";
+  font-size: 9.336vw;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #140107;
+
+  background-color: #F8FF13;
+  border-radius: 2.52vw;
+  cursor: pointer;
+  transition: 0.3s ease;
+  z-index: 10;
+
+  & > span {
+    font-family: "Poppins";
+    font-size: 6.133vw;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-top: 1vw;
+
+    @media (min-width: 1000px) {
+      padding-top: 0vw;
+      font-size: 1.458vw;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    width: 15.677vw;
+    height: 3.177vw;
+    border-radius: 0.521vw;
+    border-width: 4px;
+  }
+}
+  &--disabled {
+    pointer-events: none;
+    opacity: 0.7;
+  }
+
+
+@keyframes scaled-btn {
+  0% {
+    transform: scale(1) skewX(-15deg);
+  }
+  50% {
+    transform: scale(1.1) skewX(-15deg);
+  }
+  100% {
+    transform: scale(1) skewX(-15deg);
+  }
+}
+}

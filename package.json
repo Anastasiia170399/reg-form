@@ -1,0 +1,15 @@
+{
+  "name": "reg-form",
+  "version": "1.0.0",
+  "description": "Reusable registration Form",
+  "main": "src/RegForm/RegForm.js",
+  "module": "src/RegForm/RegForm.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Anastasiia170399/reg-form.git"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "next": "^13.0.0"
+  }
+}

@@ -1,0 +1,111 @@
+[
+    {
+        "country": "BR",
+        "passwordHints": [
+            {
+                "type": "minLength",
+                "hint": "pelo menos 6 símbolos"
+            },
+            {
+                "type": "digit",
+                "hint": "pelo menos 1 dígito (0-9)"
+            },
+            {
+                "type": "latin",
+                "hint": "pelo menos 1 caractere  minúsculo  ou maiúsculo (a-Z)"
+            }
+        ]
+    },
+    {
+        "country": "IN",
+        "passwordHints": [
+            {
+                "type": "minLength",
+                "hint": "at least 4 symbols"
+            }
+        ]
+    },
+    {
+        "country": "TMS",
+        "passwordHints": [
+            {
+                "type": "minLength",
+                "hint": "at least 8 symbols"
+            },
+            {
+                "type": "digit",
+                "hint": "at least 1 digit (0-9)"
+            },
+            {
+                "type": "lowerCase",
+                "hint": "at least 1 lowercase character"
+            },
+            {
+                "type": "upperCase",
+                "hint": "at least 1 uppercase character"
+            }
+        ]
+    },
+    {
+        "country": "DS",
+        "passwordHints": [
+            {
+                "type": "minLength",
+                "hint": "at least 8 symbols"
+            },
+            {
+                "type": "digit",
+                "hint": "at least 1 digit (0-9)"
+            },
+            {
+                "type": "specialChars",
+                "hint": "at least one special character"
+            },
+
+            {
+                "type": "lowerCase",
+                "hint": "at least 1 lowercase character"
+            },
+            {
+                "type": "upperCase",
+                "hint": "at least 1 uppercase character"
+            }
+        ]
+    },
+    {
+        "country": "BD",
+        "passwordHints": [
+            {
+                "type": "minLength",
+                "hint": "পাসওয়ার্ড 6 অক্ষর দীর্ঘ হতে হবে"
+            }
+        ]
+    },
+    {
+        "country": "GH",
+        "passwordHints": [
+            {
+                "type": "minLength",
+                "hint": "at least 8 symbols"
+            },
+            {
+                "type": "digit",
+                "hint": "at least 1 digit (0-9)"
+            },
+            {
+                "type": "char",
+                "hint": "at least 1 character (A-z)"
+            }
+        ]
+    },
+    {
+        "country": "TZ",
+        "passwordHints": [
+            {
+                "type": "minLength",
+                "hint": "at least 4 symbols"
+            }
+        ]
+    }
+
+]
